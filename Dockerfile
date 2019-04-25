@@ -92,6 +92,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 
 # Set up config file
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY view /tmp/view/index.html
 
 # Set permissions
 RUN chmod 444 /etc/nginx/nginx.conf && \
